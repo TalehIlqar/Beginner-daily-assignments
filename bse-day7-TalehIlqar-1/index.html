@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-light" href="#">Carousel</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 disabled " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carusel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-left">
+                    <h1>Example headline</h1>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interduma pharetra augue mollis interduma
+                        pharetra augue mollis interdum.</p>
+                    <button class="bg-primary text-white border-0 rounded p-2">sing up today</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carusel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carusel3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-dark pl-5 text-white">
+            <div class="container">
+                <h1 class="display-4">Title of the longer <br> featured blog post </h1>
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laborum voluptate
+                    accusantium! Voluptatum dicta, corporis veniam possimus praesentium et nemo molestias earum magni
+                    aspernatur est iusto harum reiciendis, blanditiis sunt.</p>
+                <h5>Continue reading..</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Word</h5>
+                                <h2>Featured post</h2>
+                                <p class="card-text text-muted">Nov 12</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                                <h5 class="card-title text-primary">Continue reading</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 style="position: absolute;top: 40%; left: 25%;  color: #fff;">Thumbnail</h5>
+                            <img src="img/thumbnail.jpg" class="card-img w-100 h-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Word</h5>
+                                <h2>Post title</h2>
+                                <p class="card-text text-muted">Nov 12</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                                <h5 class="card-title text-primary">Continue reading</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 style="position: absolute;top: 40%; left: 25%;  color: #fff;">Thumbnail</h5>
+                            <img src="img/thumbnail.jpg" class="card-img w-100 h-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-8">
+                <h5><b>From the Firefox</b></h5>
+                <hr>
+                <h1><b>Sample blog post</b></h1>
+                <p class="text-muted">January 1, 2014 by <span class="text-primary">Mark</span></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore beatae quo, ullam, consequatur
+                    voluptate ex fugit expedita voluptates incidunt, iste itaque? Esse, erro.</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="text-primary">Ab deserunt autem
+                        itaque error,</span> nam consequuntur quas officia natus provident animi accusantium quam minima
+                    in assumenda dolor amet molestias aut sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="text-dark"><b>Ab deserunt autem
+                            itaque error,</b></span> expedita voluptates incidunt, iste itaque? Esse, erro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deserunt autem itaque error, expedita
+                    voluptates incidunt, iste itaque? Esse, erro.</p>
+                <h3><b>Heading</b></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit rem amet libero, non facilis totam
+                    nisi a quas numquam cum commodi deleniti architecto eveniet? Incidunt maxime ut eos quo molestias?
+                </p>
+                <h4><b>Subheading</b></h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4><b>Subheading</b></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate a exercitationem repellendus
+                    libero facilis veritatis quibusdam id facere tempora nesciunt, quos, enim molestias in reprehenderit
+                    rem placeat magni impedit. Dolores.</p>
+                <ul>
+                    <li>Voluptate a exercitationem repellendu epellendus</li>
+                    <li>Voluptate a exercitationem epellendu</li>
+                    <li>Voluptate a exercitationem</li>
+                </ul>
+                <p>Rpellendu epellen duepelle nduvepellendu epellenduepellendu </p>
+                <ol>
+                    <li>Voluptate a exercitationem repellendu epellendus</li>
+                    <li>Voluptate a exercitationem epellendu</li>
+                    <li>Voluptate a exercitationem</li>
+                </ol>
+                <p>Rpellendu epellen duepelle nduvepellendu epellenduepellendu </p>
+                <div class="mt-5 mb-5">
+                    <button type="button" class="btn btn-outline-primary rounded-pill">Older</button>
+                    <button type="button" class="btn btn-outline-secondary rounded-pill">Newer</button>
+                </div>
+
+                <div class="h3">Billing address</div>
+                <div class="row">
+                    <div class="col-6">
+                        <label style="display: block;" for="">First name</label>
+                        <input class="w-100" type="text ">
+                    </div>
+                    <div class="col-6">
+                        <label style="display: block;" for="">Last name</label>
+                        <input class="w-100" type="text">
+                    </div>
+
+                    <div class="col-12">
+                        <label style="display: block;" class="mt-3 " for="">Username</label>
+                        <div class="input-group mb-3 ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label style="display: block;" class="mt-3 " for="">E-mail <span
+                                    class="text-muted">(Optimal)</span></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label style="display: block;" class="mt-3 " for="">Address </label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="1234 Main st">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label style="display: block;" class="mt-3 " for="">Address 2 <span
+                                    class="text-muted">(Optimal)</span></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Apartment or suite">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label style="display: block;" class="mt-3 " for="">Country </label>
+                        <div class="input-group mb-3">
+                           
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">Uels</option>
+                              <option value="2">Kipr</option>
+                              <option value="3">Car</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <label style="display: block;" class="mt-3 " for="">State </label>
+                        <div class="input-group mb-3">
+                           
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-2">
+                        <label style="display: block;" class="mt-3 " for="">Zip </label>
+                        <input type="text" class="w-100">
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <label class="ml-3"  for="">Bu sayti eger beyendinizse</label>
+                          </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                              </div>
+                            </div>
+                            <label class="ml-3"  for="">Tech Academy study center</label>
+                          </div>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="h3 mt-3">Payment</div>
+                        <div>
+                            <input type="radio" name="1">
+                        <label for="">Credit cart</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="1">
+                        <label for="">Debit cart</label>
+                        </div>
+                        <div><input type="radio" name="1">
+                            <label for="">Paypal cart</label></div>
+                    </div>
+                    </row>
+                    <div class="col-6">
+                        <label for="" class="d-block">Name on cart</label>
+                        <input type="text" class="w-100">
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="d-block">Credit cart number</label>
+                        <input type="text" class="w-100">
+                    </div>
+                    <div class="col-12">
+                        <p class="text-muted">Bu yazi muteddir</p>
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="d-block">Exprition</label>
+                        <input type="text" >
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="d-block">CVV</label>
+                        <input type="text" >
+                    </div><hr>
+                    <div class="col-12">
+                        <button class="bg-primary text-light w-100 p-2 mt-3">Contunie to checkout</button>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card bg-light mb-3 p-3" style="border: none;">
+                    <h3>About</h3>
+                    <div class="">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card bg-0 mb-3 p-3" style="border: none;">
+                    <h3>Elsewhere</h3>
+                    <div class="text-primary ">
+                        <p class="m-0 p-0">Github</p>
+                        <p class="m-0 p-0">Twitter</p>
+                        <p class="m-0 p-0">Facebook</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

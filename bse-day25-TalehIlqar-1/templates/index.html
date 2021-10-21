@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "_formhelpers.html" import render_field %}
+
+{% block content %}
+<h1 class="mb-5 text-center">
+    <b>Say Hello</b>
+</h1>
+<form action="" method="POST" style="width: 60%; margin: 0 auto;">
+    {{ form.csrf_token }}
+    {{ render_field(form.full_name) }}
+    {{ render_field(form.email) }}
+    {{ render_field(form.needed_services) }}
+    {{ render_field(form.budget) }}
+    {{ render_field(form.message) }}
+
+    <button type="submit">Gonder</button>
+   
+</form>
+    
+{% endblock %}

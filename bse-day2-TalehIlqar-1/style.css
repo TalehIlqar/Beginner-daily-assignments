@@ -1,0 +1,46 @@
+h1{
+    font-family: 'Dancing Script';
+    color: crimson;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p1{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    word-spacing: 2em;
+    font-size: 30px;
+}
+
+h2{
+    text-align: left;
+    text-decoration: line-through;
+    font-family: 'Indie Flower';
+    
+}
+
+.p2{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    color: orange;
+    text-align: right;
+    word-spacing: 2em;
+    font-size: 30px;
+}
+
+
+h3{
+    letter-spacing: 10px;
+    color: crimson;
+}
+
+
+
+.p3{
+    font-size: 22px;
+    word-spacing: 2em;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font: italic;
+}

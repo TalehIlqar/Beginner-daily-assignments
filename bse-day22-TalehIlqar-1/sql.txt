@@ -1,0 +1,46 @@
+CREATE TABLE `Employee` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `age` INT,
+    `salary` INT NOT NULL,
+    `number` INT NOT NULL UNIQUE,
+    `nationality` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+
+insert into Employee (name, age, salary, number, nationality) 
+values
+("Cara",49,1458,9506,"United States Virgin Islands"),
+("Wade",66,2585,8509,"Japan"),
+("Verda",52,3413,7560,"Mali"),
+("Cierra",80,3342,6874,"Korea"),
+("Frederique",74,3075,4265,"Belarus"),
+("Alice",30,2777,4014,"Berlin"),
+("Joyce",68,3293,6291,"Chad"),
+("Nella",53,1504,5540,"Bosnia and Herzeqowina"),
+("Aida",26,1715,6586,"Bahamas"),
+("Greta",39,3094,1853,"Colombia");
+
+
+select * from Employee
+
+select * from Employee where salary = 3413
+
+select * from Employee where salary > 2500
+
+select * from Employee where name like 'A%'
+
+SELECT * FROM Employee WHERE nationality IN ('Korea', 'Japan', 'Belarus', 'Chad');
+
+SELECT * FROM Employee WHERE age BETWEEN 30 AND 50;
+
+SELECT * FROM Employee WHERE name = 'Wade' and nationality = 'Japan' 
+
+SELECT * FROM Employee WHERE age > 30  and  number = 7560 or number = 1853 
+
+UPDATE Employee SET salary = salary * 2 WHERE name  like '%a';
+
+DELETE FROM Employee WHERE number = 4014;
+
+Delete from Employee

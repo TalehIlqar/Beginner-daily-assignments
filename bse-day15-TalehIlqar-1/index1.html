@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xZoom-master/dist/xzoom.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <img class="xzoom" id="main_image" src="/home/taleh/New Tech Academy/Beginner/daily/bse-day15-TalehIlqar-1/xZoom-master/example/images/gallery/preview/01_b_car.jpg" xoriginal="xZoom-master/example/images/gallery/original/01_b_car.jpg">
+
+
+    <a href="xZoom-master/example/images/gallery/original/01_b_car.jpg">
+        <img class="xzoom-gallery" width="80" src="xZoom-master/example/images/gallery/thumbs/01_b_car.jpg" xpreview="xZoom-master/example/images/gallery/preview/01_b_car.jpg">
+    </a>
+
+    <a href="xZoom-master/example/images/gallery/original/02_o_car.jpg">
+        <img class="xzoom-gallery" width="80" src="xZoom-master/example/images/gallery/preview/02_o_car.jpg">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script src="xZoom-master/dist/xzoom.min.js"></script>
+
+    <script>
+    $(".xzoom, .xzoom-gallery").xzoom();
+
+    </script>
+</body>
+
+</html>

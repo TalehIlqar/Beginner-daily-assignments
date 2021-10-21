@@ -1,0 +1,62 @@
+CREATE TABLE `salesman` (
+    `id` int unsigned NOT NULL AUTO_INCREMENT primary key,
+    `name` varchar(255) NOT NULL,
+    `city` varchar(255),
+    `commision` decimal(4,2)
+);
+
+
+CREATE TABLE customers (
+id int unsigned NOT NULL AUTO_INCREMENT primary key,
+name varchar(40) not null,
+city varchar(40),
+grade int ,
+salesmen_id int unsigned, 
+foreign key (salesmen_id) references salesman(id)
+);
+
+
+insert into salesman(id, name, city, commision) values
+(5001, 'James Hoog', 'New York', 0.15),
+(5002, 'Nail Knite', 'Paris', 0.13),
+(5005, 'Pit Alex', 'London', 0.11),
+(5006, 'Mc Lyon', 'Paris', 0.14),
+(5003, 'Lausen Hense', null, 0.12),
+(5007, 'Paul Adam', 'Rome', 0.13)
+
+
+
+insert into customers(name, city, grade, salesmen_id) values
+('Niko', 'New York', 100, 5001),
+('Grahman', 'California',200, 5002),
+('Fabian', 'Paris', 300, 5006),
+('Brad', 'New York', 200, 5001),
+('Geoff', 'Berlin', '100', 5003),
+('Julian', 'London', 300, 5002 ),
+('Brad Guzan', 'London', null, 5005),
+('Jozy', 'Moscow', 200, 5007)
+
+task 1
+
+SELECT customers.name,customers.city,salesman.name, salesman.commision
+FROM customers
+inner join salesman 
+on customers.salesmen_id = salesman.id
+
+task 2
+
+select customers.name, customers.city, salesman.name, salesman.commision
+FROM customers
+inner join salesman
+on customers.salesmen_id=salesman.id
+where salesman.commision>0.12
+
+task 3
+
+SELECT customers.name as 'Customer name',salesman.name as 'Salesman name', customers.city
+FROM customers
+INNER JOIN salesman
+on customers.city=salesman.city
+
+
+
